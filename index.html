@@ -1,0 +1,876 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="MkDocs Material Boilerplate (Starter Kit) - Deploy documentation to hosting platforms (Netlify, GitHub Pages, GitLab Pages, and AWS Amplify Console) with Docker, pipenv, and GitHub Actions.">
+      
+      
+      
+        <meta name="author" content="peaceiris">
+      
+      
+        <link rel="canonical" href="https://mkdocs.peaceiris.com/">
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.6">
+    
+    
+      
+        <title>web mining</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.875de78c.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.f1a3b89f.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#2094f3">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="manifest" href="manifest.json" crossorigin="use-credentials">
+    
+    
+      <link rel="stylesheet" href="assets/css/custom.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="blue" data-md-color-accent="blue">
+  
+    
+    <script>function __prefix(e){return new URL(".",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#web_mining" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="web mining" class="md-header__button md-logo" aria-label="web mining" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            web mining
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              web mining
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        
+<a href="https://github.com/peaceiris/mkdocs-material-boilerplate/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="web mining" class="md-nav__button md-logo" aria-label="web mining" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    web mining
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/peaceiris/mkdocs-material-boilerplate/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          web mining
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="." class="md-nav__link md-nav__link--active">
+        web mining
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#crawling" class="md-nav__link">
+    Crawling
+  </a>
+  
+    <nav class="md-nav" aria-label="Crawling">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#teori_tentang_crawling" class="md-nav__link">
+    Teori tentang Crawling
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#implementasi_crawling" class="md-nav__link">
+    Implementasi Crawling
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#text_preprocessing" class="md-nav__link">
+    Text Preprocessing
+  </a>
+  
+    <nav class="md-nav" aria-label="Text Preprocessing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#case_folding" class="md-nav__link">
+    Case Folding
+  </a>
+  
+    <nav class="md-nav" aria-label="Case Folding">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#teori_tentang_case_folding" class="md-nav__link">
+    Teori tentang Case Folding
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#implementasi_case_folding" class="md-nav__link">
+    Implementasi Case Folding
+  </a>
+  
+    <nav class="md-nav" aria-label="Implementasi Case Folding">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mengubah_seluruh_huruf_dalam_teks_menjadi_huruf_kecil" class="md-nav__link">
+    Mengubah seluruh huruf dalam teks menjadi huruf kecil
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#menghilangkan_angka_dalam_teks" class="md-nav__link">
+    Menghilangkan angka dalam teks
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#menghilangkan_tanda_baca_dalam_teks" class="md-nav__link">
+    Menghilangkan tanda baca dalam teks
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tokenisasi" class="md-nav__link">
+    Tokenisasi
+  </a>
+  
+    <nav class="md-nav" aria-label="Tokenisasi">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#teori_tentang_tokenisasi" class="md-nav__link">
+    Teori tentang Tokenisasi
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#implementasi_tokenisasi" class="md-nav__link">
+    Implementasi Tokenisasi
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stemming" class="md-nav__link">
+    Stemming
+  </a>
+  
+    <nav class="md-nav" aria-label="Stemming">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#teori_tentang_stemming" class="md-nav__link">
+    Teori tentang Stemming
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#implementasi_stemming" class="md-nav__link">
+    Implementasi Stemming
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stopword_removal" class="md-nav__link">
+    Stopword Removal
+  </a>
+  
+    <nav class="md-nav" aria-label="Stopword Removal">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#teori_tentang_stopword" class="md-nav__link">
+    Teori tentang Stopword
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#implementasi_stopword_removal" class="md-nav__link">
+    Implementasi Stopword Removal
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#crawling" class="md-nav__link">
+    Crawling
+  </a>
+  
+    <nav class="md-nav" aria-label="Crawling">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#teori_tentang_crawling" class="md-nav__link">
+    Teori tentang Crawling
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#implementasi_crawling" class="md-nav__link">
+    Implementasi Crawling
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#text_preprocessing" class="md-nav__link">
+    Text Preprocessing
+  </a>
+  
+    <nav class="md-nav" aria-label="Text Preprocessing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#case_folding" class="md-nav__link">
+    Case Folding
+  </a>
+  
+    <nav class="md-nav" aria-label="Case Folding">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#teori_tentang_case_folding" class="md-nav__link">
+    Teori tentang Case Folding
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#implementasi_case_folding" class="md-nav__link">
+    Implementasi Case Folding
+  </a>
+  
+    <nav class="md-nav" aria-label="Implementasi Case Folding">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mengubah_seluruh_huruf_dalam_teks_menjadi_huruf_kecil" class="md-nav__link">
+    Mengubah seluruh huruf dalam teks menjadi huruf kecil
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#menghilangkan_angka_dalam_teks" class="md-nav__link">
+    Menghilangkan angka dalam teks
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#menghilangkan_tanda_baca_dalam_teks" class="md-nav__link">
+    Menghilangkan tanda baca dalam teks
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tokenisasi" class="md-nav__link">
+    Tokenisasi
+  </a>
+  
+    <nav class="md-nav" aria-label="Tokenisasi">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#teori_tentang_tokenisasi" class="md-nav__link">
+    Teori tentang Tokenisasi
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#implementasi_tokenisasi" class="md-nav__link">
+    Implementasi Tokenisasi
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stemming" class="md-nav__link">
+    Stemming
+  </a>
+  
+    <nav class="md-nav" aria-label="Stemming">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#teori_tentang_stemming" class="md-nav__link">
+    Teori tentang Stemming
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#implementasi_stemming" class="md-nav__link">
+    Implementasi Stemming
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stopword_removal" class="md-nav__link">
+    Stopword Removal
+  </a>
+  
+    <nav class="md-nav" aria-label="Stopword Removal">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#teori_tentang_stopword" class="md-nav__link">
+    Teori tentang Stopword
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#implementasi_stopword_removal" class="md-nav__link">
+    Implementasi Stopword Removal
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/peaceiris/mkdocs-material-boilerplate/edit/master/docs_sample/index.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                <h1 id="web_mining">Web Mining<a class="headerlink" href="#web_mining" title="Permanent link">&para;</a></h1>
+<p>​               <strong>Nama  : Anas Mahmudi</strong></p>
+<p>​               <strong>NPM   : 160411100176</strong></p>
+<p>​           <strong>Dosen Pengampu Mata Kuliah    : Mula'ab, S.Si., M.Kom.</strong></p>
+<h2 id="crawling">Crawling<a class="headerlink" href="#crawling" title="Permanent link">&para;</a></h2>
+<h3 id="teori_tentang_crawling">Teori tentang Crawling<a class="headerlink" href="#teori_tentang_crawling" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>Kita semua tahu bahwa dalam website terkandung informasi atau data. Dalam web mining, crawling adalah suatu proses ekstraksi data dari suatu website. Artinya, kita dapat menghimpun data atau informasi tersebut baik secara manual maupun otomatis. Biasanya, crawling digunakan untuk mengambil data dalam jumlah yang banyak dan tidak mungkin untuk disalin satu persatu secara manual.</p>
+<p>Crawling data dapat dilakukan dengan berbagai cara dan bahasa pemrograman yang beragam pula. Dalam penjelasan kali ini, saya menggunakan bahasa pemrograman Python dengan library Scrapy untuk menghimpun data dari suatu web e-commerce. </p>
+<p>Lihat <a href="https://docs.scrapy.org/">disini</a> untuk dokumentasi Scrapy Python.</p>
+</blockquote>
+<h3 id="implementasi_crawling">Implementasi Crawling<a class="headerlink" href="#implementasi_crawling" title="Permanent link">&para;</a></h3>
+<p>Contoh crawling yang akan saya lakukan adalah mengambil data produk dari <a href="https://www.league-world.com/">League World</a> yang merupakan website penjualan pakaian dan perlengkapan olahraga. Pertama, tentukan terlebih dahulu page/halaman mana yang akan diambil datanya (dalam hal ini, saya mengambil data produk women collection). </p>
+<p>Mulai project melalui command prompt</p>
+<div class="codehilite"><pre><span></span><code>C:\Users&gt; scrapy startproject tugas_scrape
+</code></pre></div>
+
+<p>Masuk ke dalam direktori project yang telah dibuat</p>
+<div class="codehilite"><pre><span></span><code>C:\Users&gt; cd tugas_scrape
+</code></pre></div>
+
+<p>Memasukkan link website yang dituju</p>
+<div class="codehilite"><pre><span></span><code>C:\Users\tugas_scrape&gt; scrapy genspider league https://www.league-world.com/
+</code></pre></div>
+
+<p>Setelah itu, buka folder project yang telah dibuat. Akan terdapat folder dengan nama spiders berisi file init dan file dengan nama league. Edit pada teks editor python.</p>
+<div class="codehilite"><pre><span></span><code><span class="c1"># -*- coding: utf-8 -*-</span>
+<span class="kn">import</span> <span class="nn">scrapy</span>
+
+<span class="k">class</span> <span class="nc">LeagueSpider</span><span class="p">(</span><span class="n">scrapy</span><span class="o">.</span><span class="n">Spider</span><span class="p">):</span>
+    <span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;league&#39;</span>
+    <span class="n">allowed_domains</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;https://www.league-world.com/&#39;</span><span class="p">]</span>
+    <span class="n">start_urls</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;https://www.league-world.com/tag/29/women/&#39;</span><span class="p">]</span>
+
+    <span class="k">def</span> <span class="nf">parse</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">response</span><span class="p">):</span>
+        <span class="n">data</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">css</span><span class="p">(</span><span class="s1">&#39;.product-item&#39;</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">data</span><span class="p">:</span>
+            <span class="n">nama</span> <span class="o">=</span> <span class="n">item</span><span class="o">.</span><span class="n">css</span><span class="p">(</span><span class="s1">&#39;.product-name a::text&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">extract</span><span class="p">()</span>
+            <span class="n">harga</span> <span class="o">=</span> <span class="n">item</span><span class="o">.</span><span class="n">css</span><span class="p">(</span><span class="s1">&#39;.autoNumeric::text&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">extract</span><span class="p">()</span>
+            <span class="k">yield</span><span class="p">{</span>
+                <span class="s1">&#39;Nama Barang&#39;</span> <span class="p">:</span> <span class="n">nama</span><span class="p">,</span>
+                <span class="s1">&#39;Harga Barang&#39;</span> <span class="p">:</span> <span class="n">harga</span>
+            <span class="p">}</span>
+</code></pre></div>
+
+<p>Dalam kode diatas, saya mengekstrak nama produk dan harga dari halaman produk wanita. Untuk mengambil data nama barang dan harga, saya menggunakan bantuan css seperti yang terdapat pada kode program.</p>
+<p>Untuk mengekstrak data dari web page tersebut, gunakan perintah pada command prompt sebagai berikut:</p>
+<div class="codehilite"><pre><span></span><code>C:\Users\tugas_scrape&gt; scrapy crawl league
+</code></pre></div>
+
+<p>Untuk menyimpan data hasil crawling ke dalam bentuk file lain (saya simpan dalam bentuk file berekstensi csv yang sudah disiapkan sebelumnya), dapat menggunakan perintah berikut:</p>
+<div class="codehilite"><pre><span></span><code>C:\Users\tugas_scrape&gt; scrapy crawl league -o hasil.csv
+</code></pre></div>
+
+<h2 id="text_preprocessing">Text Preprocessing<a class="headerlink" href="#text_preprocessing" title="Permanent link">&para;</a></h2>
+<p>Text preprocessing dapat kita artikan sebagai proses untuk menyiapkan teks sebelum dimodelkan lebih lanjut sesuai kebutuhan. Text preprocessing terdiri dari beberapa hal seperti case folding, tokenizing, stemming, stopword removal, dll. Text preprocessing biasanya juga digunakan dalam peringkasan dokumen. Tahapan-tahapan seperti case folding, tokenizing, stemming, stopword removing, dan pembentukan matriks kata sangat membantu dalam meringkas dokumen.</p>
+<h3 id="case_folding">Case Folding<a class="headerlink" href="#case_folding" title="Permanent link">&para;</a></h3>
+<h4 id="teori_tentang_case_folding">Teori tentang Case Folding<a class="headerlink" href="#teori_tentang_case_folding" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p>Case folding merupakan bagian dari text preprocessing untuk 'merapikan' teks yang akan dimodelkan. Teks selalu ditulis dalam aturan yang umum seperti penggunaan huruf kapital, adanya penggunaan angka ataupun tanda baca dan simbol-simbol. Peran case folding disini adalah mengubah seluruh huruf dalam teks menjadi huruf kecil, menghilangkan angka, dan menghapus tanda baca sehingga teks menjadi lebih rapi untuk diproses ke tahap selanjutnya.</p>
+</blockquote>
+<h4 id="implementasi_case_folding">Implementasi Case Folding<a class="headerlink" href="#implementasi_case_folding" title="Permanent link">&para;</a></h4>
+<h5 id="mengubah_seluruh_huruf_dalam_teks_menjadi_huruf_kecil">Mengubah seluruh huruf dalam teks menjadi huruf kecil<a class="headerlink" href="#mengubah_seluruh_huruf_dalam_teks_menjadi_huruf_kecil" title="Permanent link">&para;</a></h5>
+<p>Untuk mengubah huruf menjadi lowercase seluruhnya, dapat menggunakan perintah bawaan dari python yaitu .lower()</p>
+<div class="codehilite"><pre><span></span><code><span class="n">teks</span> <span class="o">=</span> <span class="s2">&quot;Anas adalah mahasiswa tahun ke-5 Program Studi S1 Teknik Informatika di Universitas Trunojoyo Madura. Karena masih situasi pandemi, Anas menempuh perkuliahan dari rumah secara daring.&quot;</span>
+
+<span class="n">teks_baru</span> <span class="o">=</span> <span class="n">teks</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">teks_baru</span><span class="p">)</span>
+</code></pre></div>
+
+<p>Output akan seperti berikut ini:</p>
+<div class="codehilite"><pre><span></span><code>Anas adalah mahasiswa tahun ke-5 program studi s1 teknik informatika di universitas trunojoyo madura. karena masih situasi pandemi, Anas menempuh perkuliahan dari rumah secara daring.
+</code></pre></div>
+
+<h5 id="menghilangkan_angka_dalam_teks">Menghilangkan angka dalam teks<a class="headerlink" href="#menghilangkan_angka_dalam_teks" title="Permanent link">&para;</a></h5>
+<p>Untuk menghilangkan angka yang ada di dalam teks, dapat menggunakan perintah bawaan dari python sebagai berikut:</p>
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">re</span>
+<span class="n">teks</span> <span class="o">=</span> <span class="s2">&quot;Anas adalah mahasiswa tahun ke-5 Program Studi S1 Teknik Informatika di Universitas Trunojoyo Madura. Karena masih situasi pandemi, Anas menempuh perkuliahan dari rumah secara daring.&quot;</span>
+
+<span class="n">teks_baru</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;\d+&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">teks</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">teks_baru</span><span class="p">)</span>
+</code></pre></div>
+
+<p>Output akan seperti berikut ini:</p>
+<div class="codehilite"><pre><span></span><code>Anas adalah mahasiswa tahun ke-5 Program Studi S1 Teknik Informatika di Universitas Trunojoyo Madura. Karena masih situasi pandemi, Anas menempuh perkuliahan dari rumah secara daring.
+</code></pre></div>
+
+<h5 id="menghilangkan_tanda_baca_dalam_teks">Menghilangkan tanda baca dalam teks<a class="headerlink" href="#menghilangkan_tanda_baca_dalam_teks" title="Permanent link">&para;</a></h5>
+<p>Untuk menghapus tanda baca yang ada di dalam teks, dapat menggunakan kode sebagai berikut:</p>
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">string</span>
+
+<span class="n">teks</span> <span class="o">=</span> <span class="s2">&quot;Anas adalah mahasiswa tahun ke-5 Program Studi S1 Teknik Informatika di Universitas Trunojoyo Madura. Karena masih situasi pandemi, Anas menempuh perkuliahan dari rumah secara daring.&quot;</span>
+
+<span class="n">teks_baru</span> <span class="o">=</span> <span class="n">teks</span><span class="o">.</span><span class="n">translate</span><span class="p">(</span><span class="nb">str</span><span class="o">.</span><span class="n">maketrans</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span><span class="s2">&quot;&quot;</span><span class="p">,</span><span class="n">string</span><span class="o">.</span><span class="n">punctuation</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">teks_baru</span><span class="p">)</span>
+</code></pre></div>
+
+<p>Output akan seperti berikut ini:</p>
+<div class="codehilite"><pre><span></span><code>Anas adalah mahasiswa tahun ke5 Program Studi S1 Teknik Informatika di Universitas Trunojoyo Madura Karena masih situasi pandemi Anas menempuh perkuliahan dari rumah secara daring
+</code></pre></div>
+
+<h3 id="tokenisasi">Tokenisasi<a class="headerlink" href="#tokenisasi" title="Permanent link">&para;</a></h3>
+<h4 id="teori_tentang_tokenisasi">Teori tentang Tokenisasi<a class="headerlink" href="#teori_tentang_tokenisasi" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p>Tokenizing atau tokenisasi dapat diartikan sebagai proses pemisahan kata-kata dalam suatu teks. Kata demi kata tersebut dipisahkan dan dikenal sebagai token. Dalam Python sendiri, ada syntax yang dapat digunakan untuk memisahkan kata dalam suatu kalimat/paragraf yaitu perintah split(). Namun biasanya dalam suatu paragraf terdapat kata yang berulang kali digunakan. Penggunaan perintah split() tidak lagi dapat membantu karena perintah tersebut hanya memisahkan kata tanpa mengenali apakah kata tersebut sudah ada sebelumnya atau belum. Untuk itu, ada modul NLTK milik Python yang memang ditujukan untuk Text Preprocesing. Perintah yang digunakan adalah word_tokenize()</p>
+</blockquote>
+<h4 id="implementasi_tokenisasi">Implementasi Tokenisasi<a class="headerlink" href="#implementasi_tokenisasi" title="Permanent link">&para;</a></h4>
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">nltk</span>
+<span class="kn">from</span> <span class="nn">nltk.tokenize</span> <span class="kn">import</span> <span class="n">word_tokenize</span>
+<span class="kn">from</span> <span class="nn">nltk.probability</span> <span class="kn">import</span> <span class="n">FreqDist</span>
+<span class="kn">import</span> <span class="nn">string</span>
+
+<span class="n">teks</span> <span class="o">=</span> <span class="s2">&quot;Anas adalah mahasiswa tahun ke-5 Program Studi Teknik Informatika di Universitas Trunojoyo Madura. Sebelum pandemi terjadi, biasanya Anas berangkat dari rumah ke kos menaiki kendaran. Setelah pandemi ada di Indonesia, Anas sama sekali belum kembali ke kos.&quot;</span>
+<span class="n">teks</span> <span class="o">=</span> <span class="n">teks</span><span class="o">.</span><span class="n">translate</span><span class="p">(</span><span class="nb">str</span><span class="o">.</span><span class="n">maketrans</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="n">string</span><span class="o">.</span><span class="n">punctuation</span><span class="p">))</span>
+
+<span class="n">kata</span> <span class="o">=</span> <span class="n">nltk</span><span class="o">.</span><span class="n">tokenize</span><span class="o">.</span><span class="n">word_tokenize</span><span class="p">(</span><span class="n">teks</span><span class="p">)</span>
+<span class="n">frekuensi</span> <span class="o">=</span> <span class="n">nltk</span><span class="o">.</span><span class="n">FreqDist</span><span class="p">(</span><span class="n">kata</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">frekuensi</span><span class="o">.</span><span class="n">most_common</span><span class="p">())</span>
+</code></pre></div>
+
+<p>Output akan seperti berikut ini:</p>
+<div class="codehilite"><pre><span></span><code>[(&#39;Anas&#39;, 5), (&#39;di&#39;, 2), (&#39;pandemi&#39;, 2), (&#39;ke&#39;, 2), (&#39;kos&#39;, 2), (&#39;adalah&#39;, 1), (&#39;mahasiswa&#39;, 1), (&#39;tahun&#39;, 1), (&#39;ke5&#39;, 1), (&#39;Program&#39;, 1), (&#39;Studi&#39;, 1), (&#39;Teknik&#39;, 1), (&#39;Informatika&#39;, 1), (&#39;Universitas&#39;, 1), (&#39;Trunojoyo&#39;, 1), (&#39;Madura&#39;, 1), (&#39;Sebelum&#39;, 1), (&#39;terjadi&#39;, 1), (&#39;biasanya&#39;, 1), (&#39;berangkat&#39;, 1), (&#39;dari&#39;, 1), (&#39;rumah&#39;, 1), (&#39;menaiki&#39;, 1), (&#39;kendaraan&#39;, 1), (&#39;Setelah&#39;, 1), (&#39;ada&#39;, 1), (&#39;Indonesia&#39;, 1), (&#39;sama&#39;, 1), (&#39;sekali&#39;, 1), (&#39;belum&#39;, 1), (&#39;kembali&#39;, 1)]
+</code></pre></div>
+
+<h3 id="stemming">Stemming<a class="headerlink" href="#stemming" title="Permanent link">&para;</a></h3>
+<h4 id="teori_tentang_stemming">Teori tentang Stemming<a class="headerlink" href="#teori_tentang_stemming" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p>Stemming adalah suatu proses untuk mengidentifikasi kata dasar dari suatu kata yang ada. Misalnya, ada kata "melihat" maka ketika dilakukan proses stemming, akan diperoleh kata dasar yaitu "lihat". Dalam Python, untuk melakukan stemming dapat menggunakan library NLTK, namun ada library khusus yang diciptakan untuk stemming kata dalam bahasa Indonesia yaitu Python Sastrawi. </p>
+</blockquote>
+<h4 id="implementasi_stemming">Implementasi Stemming<a class="headerlink" href="#implementasi_stemming" title="Permanent link">&para;</a></h4>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span> <span class="nn">Sastrawi.Stemmer.StemmerFactory</span> <span class="kn">import</span> <span class="n">StemmerFactory</span>
+<span class="n">factory</span> <span class="o">=</span> <span class="n">StemmerFactory</span><span class="p">()</span>
+<span class="n">stemmer</span> <span class="o">=</span> <span class="n">factory</span><span class="o">.</span><span class="n">create_stemmer</span><span class="p">()</span>
+
+<span class="n">teks</span> <span class="o">=</span> <span class="s2">&quot;Anas selalu melakukan olahraga ringan setiap hari selama sepuluh menit. Menurut Anas, olahraga mampu membantunya memperbaiki pola tidur di malam hari.&quot;</span>
+<span class="n">teks_baru</span> <span class="o">=</span> <span class="n">stemmer</span><span class="o">.</span><span class="n">stem</span><span class="p">(</span><span class="n">teks</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">teks_baru</span><span class="p">)</span>
+</code></pre></div>
+
+<p>Outputnya akan seperti ini:</p>
+<div class="codehilite"><pre><span></span><code>Anas selalu melakukan olahraga ringan setiap hari selaama sepulih menit turut Anas olahraga mampu bantu baik pola tidur di malam hari
+</code></pre></div>
+
+<h3 id="stopword_removal">Stopword Removal<a class="headerlink" href="#stopword_removal" title="Permanent link">&para;</a></h3>
+<h4 id="teori_tentang_stopword">Teori tentang Stopword<a class="headerlink" href="#teori_tentang_stopword" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p>Dalam sebuah teks yang panjang, seringkali terdapat kata yang tidak terlalu penting seperti kata hubung "di", "ke", "yang" dan lain sebagainya. Kata-kata tersebut sebaiknya tidak terlalu diperhatikan karena memang tidak penting seperti kata lain yang mungkin saja menjadi kunci dari suatu teks. Kata-kata yang tidak penting tersebut dikenal sebagai stopword. </p>
+</blockquote>
+<h4 id="implementasi_stopword_removal">Implementasi Stopword Removal<a class="headerlink" href="#implementasi_stopword_removal" title="Permanent link">&para;</a></h4>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span> <span class="nn">Sastrawi.StopWordRemover.StopWordRemoverFactory</span> <span class="kn">import</span> <span class="n">StopWordRemoverFactory</span>
+<span class="kn">from</span> <span class="nn">nltk.tokenize</span> <span class="kn">import</span> <span class="n">word_tokenize</span>
+<span class="n">factory</span> <span class="o">=</span> <span class="n">StopWordRemoverFactory</span><span class="p">()</span>
+<span class="n">stopword</span>  <span class="o">=</span> <span class="n">factory</span><span class="o">.</span><span class="n">create_stop_word_remover</span><span class="p">()</span>
+
+<span class="n">teks</span> <span class="o">=</span> <span class="s2">&quot;Dilaporkan pada Selasa, 8 Juni 2021 terjadi kecelakaan tunggal di Jalan Pattimura. Korban adalah siswa SMA bernama Doni yang baru pulang sekolah. Korban mengaku mengantuk sehingga menabrak pohon di tepi jalan. Kondisi korban saat ini baik-baik saja dan hanya mengalami luka ringan.&quot;</span>
+<span class="n">teks_baru</span> <span class="o">=</span> <span class="n">stopword</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">teks</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">teks_baru</span><span class="p">)</span>
+</code></pre></div>
+
+<p>Output akan seperti ini:</p>
+<div class="codehilite"><pre><span></span><code>Dilaporkan Selasa, 9 Juni 2021 terjadi kemacetan di sampang. warga sekitar dan yang berada di sekitar lokasi panik dikarenakan di sela kemacetan tersebut terjadi kecelakaan yang menyebkan korban kecelakaan terluka ringan.
+</code></pre></div>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            &copy; 2019 peaceiris
+          </div>
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+  <div class="md-footer-social">
+    
+      
+      
+        
+        
+      
+      <a href="https://github.com/peaceiris" target="_blank" rel="noopener" title="github.com" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"/></svg>
+      </a>
+    
+      
+      
+        
+        
+      
+      <a href="https://twitter.com/piris314en" target="_blank" rel="noopener" title="twitter.com" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+      </a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": ".", "features": ["tabs"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "assets/javascripts/workers/search.d351de03.min.js", "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.34eae1b6.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+      
+    
+  </body>
+</html>
